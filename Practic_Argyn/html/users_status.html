@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Users status</title>
+	<link rel="stylesheet" href="../styles/users_status.css">
+</head>
+<body class="body_">
+	<main class="main_"> 
+		<aside class="aside_">
+			<button class="aside_forward_button">
+				<img src="../images/right_arrows.svg" alt="go forward">
+			</button>
+			<span>project</span>
+			<button class="aside_menu_button">
+				<img src="../images/Circle.svg" alt="Circle">
+			</button>
+			<span>workspace</span>
+			<button>
+				<img src="../images/MapPin.svg" alt="map spot">
+			</button>
+
+			<button >
+				<img src="../images/GitCommit.svg" alt="Unit-40">
+			</button>
+
+			<button >
+				<img src="../images/CirclesFour.svg" alt="Network">
+			</button>
+
+			<button >
+				<img src="../images/CirclesThree.svg" alt="Units">
+			</button>
+
+			<button >
+				<img src="../images/Users.svg" alt="Users">
+			</button>
+
+			<button >
+				<img src="../images/ChartBar.svg" alt="Reports">
+			</button>
+
+			<button >
+				<img src="../images/NotePencil.svg" alt="Forms settings">
+			</button>
+
+			<button >
+				<img src="../images/ClipboardText.svg" alt="Edit organisation">
+			</button>  
+
+			<button >
+				<img src="../images/GearSix.svg" alt="Settings">
+			</button>
+
+		</aside>
+
+
+
+	<!-- основная часть страницы -->
+	<div class="major_page_piece">
+		<header>
+		<div class="hat">
+			<img src="../images/logo.svg">
+			<div class="hat_items">
+				<div class="hat_buttons">
+					<button id="hat_buttons_help_"></button>
+					<button id="hat_buttons_bell"></button>
+				</div> 
+
+				<div class="_line"></div>
+
+				<input type="checkbox" id="toggle_checkbox">
+
+				<label for="toggle_checkbox">
+				  <div id="star"></div>
+				  <div id="moon"></div>
+				</label>
+
+				<div class="_line"></div>
+				<div class="company_owner_">
+		
+					<img src="../images/Ellipse_1.jpg">		
+					<span id="full_name"><b>Darrel Steward</b><br>
+					Company owner</span>
+				</div>
+				<div class="_line"></div>
+				<button id="hat_buttons_log_out"></button>
+				
+			</div>
+
+		</div>
+	</header>
+	
+		
+	<form action="#" method="POST">
+		<div class="create_a_user_">
+			<button id="create_a_user_button_">
+				Create
+			</button>
+
+			<div class="create_a_user_filter">
+				<button class="create_a_user_filter_button">
+					<div>
+						<img src="../images/filter.svg" alt="filter_">
+						<span>filter</span>
+					</div>
+				</button>
+
+				<div class="search_">
+					<img src="../images/search.svg" alt="search">
+					<input type="search" name="search_user_" class="user_filter_search_user_" placeholder="Search Users by Name, Email or Date">
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="users_table_">
+				<!-- Hat -->
+			<div class="users_table_info">
+				<span>USERS</span>
+				<div class="users_table_info_buttons">
+
+					<select name="Rows_page" id="rows_page" class="buttons_group_">
+						<option value="Rows per page: 1">Rows per page: 1</option>
+						<option value="Rows per page: 2">Rows per page: 2</option>
+						<option value="Rows per page: 3">Rows per page: 3</option>
+						<option value="Rows per page: 4">Rows per page: 4</option>
+						<option value="Rows per page: 5">Rows per page: 5</option>
+						<option value="Rows per page: 6">Rows per page: 6</option>
+						<option value="Rows per page: 7">Rows per page: 7</option>
+						<option value="Rows per page: 8">Rows per page: 8</option>
+						<option value="Rows per page: 9">Rows per page: 9</option>
+						<option value="Rows per page: 10" selected>Rows per page: 10</option>
+					</select>
+
+					<span class="buttons_group_">1-10 of 276</span>
+
+					<div class="buttons_group_ shoose_page">
+						<span>Go to</span>
+						<div>
+							<input type="text" maxlength="2">
+						</div>
+						<span>page</span>
+					</div>
+
+					<div class="buttons_group_">
+						<button><img src="../images/CaretLeft.svg" alt="Left"></button>
+						<button><img src="../images/CaretRight.svg" alt="Right"></button>
+					</div>
+
+
+
+				</div>
+			</div>
+			<div>
+				<div class="table_container">
+					<table class="main_table_">
+						<tr>
+							<th>#</th>
+							<th><div><img src="../images/ArrowsDownUp.svg" alt="arrows down up">name</div></th>
+							<th><div><img src="../images/ArrowsDownUp.svg" alt="arrows down up">lastname</div></th>		
+							<th><div><img src="../images/ArrowsDownUp.svg" alt="arrows down up">e-mail</div></th>
+							<th><div><img src="../images/ArrowsDownUp.svg" alt="arrows down up">organisations</div></th>
+							<th><div><img src="../images/ArrowsDownUp.svg" alt="arrows down up">units</div></th>
+							<th><div><img src="../images/ArrowsDownUp.svg" alt="arrows down up">status</div></th>
+							<th><div>actions</div></th>
+							
+						</tr>
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td>
+								<div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>	
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td><div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>				
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td><div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>				
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td><div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>				
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td><div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>				
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td><div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>				
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td><div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>				
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td><div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>				
+
+						<tr>
+							<td><div>1239</div></td>
+							<td><div>Kevin</div></td>
+							<td><div>McReynold</div></td>
+							<td><div>kevin@franmetrics.net</div></td>
+							<td><div>
+									<select name="shooose_organisation" id="organisation_select" class="selects_buttons">
+										<option value="Sasquatch Strenght" selected>Sasquatch Strenght</option>
+									</select>	
+								</div>								
+							</td>
+							<td><div>
+									<select name="shooose_unit" id="unit_select" class="selects_buttons">
+										<option value="Unit 51" selected>Unit 51</option>
+									</select>
+								</div>
+							</td>
+							<td><div>
+								<div class="main_table_user_status">
+									<img src="../images/Ellipse_2.svg" alt="Ellipse">
+									Active
+								</div>
+							</td>	
+							<td><div>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/burger.svg" alt="burger"></button>
+									<button class="edit_trash_buttons selects_buttons"><img src="../images/Trash.svg" alt="Trash"></button>
+									<button class="edit_pencil_buttons selects_buttons"><img src="../images/Pencil.svg" alt="Pencil"></button>
+								</div>
+							</td>
+						</tr>									
+					</table>	
+				</div>	
+			</div>								
+
+			
+		</div>
+
+	</form>
+
+	
+	</div>
+	<!-- конец основной части страницы -->
+
+	</main>
+</body>
+</html>

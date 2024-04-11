@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../styles/user_profile.css">
+</head>
+<body>
+	<main class="main">
+		<aside class="aside" id="aside">
+			<img src="../images/FRANMETRIC.png" class="firstImage">
+			<button id="aside_slide_button"><img src="../images/arrows.svg" alt=""></button> <br>
+			<span>
+				Project
+			</span>
+			<br>
+			<button class="aside_menu_buttons">
+				<img src="../images/Circle.svg" alt="Westside Pizza">
+				<span>Westside Pizza</span>
+			</button> 
+			<br>
+			<span>Workspase</span> <br>
+			<button class="aside_menu_buttons"><img src="../images/MapPin.svg" alt="Westside Pizza"><span>Main</span></button> <br>
+			<button class="aside_menu_buttons"><img src="../images/GitCommit.svg" alt="Unit 40 - YAKIMA"><span>Unit 40 - YAKIMA</span></button> <br>
+			<button class="aside_menu_buttons"><img src="../images/CirclesFour.svg" alt="Network"><span>Network</span></button> <br>
+			<button class="aside_menu_buttons"><img src="../images/CirclesThree.svg" alt="Units"><span>Units</span></button> <br>
+			<span>Manage</span> <br>
+			<button class="aside_menu_buttons"><img src="../images/Users.svg" alt="Units"><span>Users</span></button> <br>
+			<button class="aside_menu_buttons"><img src="../images/ChartBar.svg" alt="Reports"><span>Reports</span></button> <br>
+			<button class="aside_menu_buttons"><img src="../images/NotePencil.svg" alt="Form settings"><span>Form settings</span></button> <br>
+			<button class="aside_menu_buttons">
+				<img src="../images/ClipboardText.svg" alt="Edit organisation">
+				<span>Edit organisation</span>
+			</button> <br>
+			<button class="aside_menu_buttons">
+				<img src="../images/GearSix.svg" alt="Settings"><span>Settings</span>
+			</button> <br>
+	</aside> 
+	<div class="sub_menu" id="sub_menu1">
+		<button id="sub_menu_exit_button" class="sub_menu_exit_button"></button>
+		<span class="rest_of_menu">nested items</span><br>
+		<span class="rest_of_menu" id="first_item_of_rest">User profile</span><br>
+		<span class="rest_of_menu">User profile</span><br>
+		<span class="rest_of_menu">Security</span><br>
+		<span class="rest_of_menu">Trusted devices</span><br>
+		<span class="rest_of_menu">Log in Attempts</span><br>
+	</div>
+	<!-- _______________________Начало профиля_______________ -->
+	<div class="right">
+		<header>
+		<div class="hat">
+			<img src="../images/logo.svg">
+			<div class="hat_items">
+				<div class="hat_buttons">
+					<button id="hat_buttons_help_"></button>
+					<button id="hat_buttons_bell"></button>
+				</div> 
+
+				<div class="_line"></div>
+
+				<input type="checkbox" id="toggle_checkbox">
+
+				<label for="toggle_checkbox">
+				  <div id="star"></div>
+				  <div id="moon"></div>
+				</label>
+
+				<div class="_line"></div>
+				<div class="company_owner_">
+		
+					<img src="../images/Ellipse_1.jpg">		
+					<span id="full_name"><b>Darrel Steward</b><br>
+					Company owner</span>
+				</div>
+				<div class="_line lastLine"></div>
+				<button id="hat_buttons_log_out"></button>
+				
+			</div>
+
+		</div>
+	</header>
+	<form action="" id="profile_form_">
+	<div class="major_profile">
+		<div class="major_profile_header">
+			<span>USER PROFILE</span>
+			<div>
+				<span><u>Cancel</u></span>
+				<button>Save</button>
+			</div>
+		</div>
+		<div class="major_profile_profile_avatar">
+			
+			<img src="../images/Ellipse_1.jpg" alt="">
+
+			<div>
+				<div>
+					<button id="profile_avatar_butt_1">Upload picture</button>
+					<button id="profile_avatar_butt_2">Delete picture</button>
+				</div>
+				<br>
+				<span>
+					Update your avatar by clicking the button. Square size recommended in SVG, PNG or JPG format only.
+				</span>
+			</div>
+
+		</div>
+		<div class="major_profile_Credentials">
+			<span id="Credentials_head_text">Credentials</span>
+			<div class="User_s_Credentials">
+				<div id="User_s_Credentials_input_1">
+					<input type="text" id="F_username" name="F_user_name" placeholder="First name">
+					<br>
+					<br>
+					<input type="text" id="Email_user" name="user_Email" placeholder="Email">
+				</div>
+				<div id="User_s_Credentials_input_2">
+					<input type="text" id="L_username" name="L_user_name" placeholder="Last name">
+					<br>
+					<br>
+					<!-- <input type="text" id="Loc_use" name="user_Loc" placeholder="Location"> -->
+					<select name="user_Loc" id="Loc_use">
+						<option value="USA, lowa">USA, lowa</option>
+						<option value="USA, lA">USA, lA</option>
+						<option value="USA, Ohaio">USA, Ohaio</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="major_profile_Organizations">
+			<span id="Organizations_text">Organizations</span>
+			<div>
+				<div class="Organizations_list_item" id="item_1"><a href="#">Westside Pizza</a></div>
+				<div class="Organizations_list_item" id="item_2"><a href="">Star Barber</a></div>
+			</div>
+		</div>
+		<div class="major_profile_units_">
+			<span>UNITS</span>
+			<div class="units_div_container">
+				<div class="Organizations_list_item"><a href="">Westside Pizza - Unit 01 - COLVILLE</a></div>
+				<div class="Organizations_list_item"><a href="">Westside Pizza - Unit 02 - CHEWELAH</a></div>
+			</div>
+			<div class="units_div_container">
+				<div class="Organizations_list_item">Westside Pizza - Unit 3 - BAINBRIDGE ISLE</div>
+				<div class="Organizations_list_item">Star Barber - Unit 01 - FORTUNA</div>
+			</div>
+		</div>
+	</div>
+	</form> <!-- _______________________Конец профиля_______________- -->
+	</div>
+	
+	</main>
+	<script src="../JS/userProfile/subMenu.js"></script>
+	<script src="../JS/userProfile/userProfile.js"></script>	
+	
+</body>
+</html>
